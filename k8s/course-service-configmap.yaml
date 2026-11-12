@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: course-service-config
+  namespace: student-registration
+data:
+  # Kubernetes DNS name of the Student Service (service-name:port)
+  STUDENT_SERVICE_URL: "http://student-service:8081"
